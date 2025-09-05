@@ -9,7 +9,7 @@ from tests import DELTA
 class SgdOptimizerTestCase(unittest.TestCase):
     def test_step(self):
         parameters = {
-            'x': np.array([10.0]),
+            'x': np.array([10.0, 20.0]),
             'y': np.array([10.0])
         }
         optimizer = SgdOptimizer(parameters, learning_rate=0.1)
